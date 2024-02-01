@@ -6,6 +6,17 @@ public class Asignatura {
 	private int EV1;
 	private int EV2;
 	private int EV3;
+	
+	
+	public Asignatura(String nombre,int EV1, int EV2,int EV3) {
+		this.nombre=nombre;
+		this.EV1=EV1;
+		this.EV2=EV2;
+		this.EV3=EV3;
+	}
+	
+	
+	
 	public String getNombre() {
 		return nombre;
 	}

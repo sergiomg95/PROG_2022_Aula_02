@@ -8,20 +8,23 @@ public class Alumno {
 	private String apellidos;
 	private int telefono;
 	private Asignatura asignaturas[];
-	
+	private int cuantasAsig;
 	
 	
 	public Alumno() {
 		asignaturas=new Asignatura[4];
+		cuantasAsig=0;
+	}
+	
+	public void addAsig(Asignatura Asignatura) {
+		if(cuantasAsig<asignaturas.length) {
+			asignaturas[cuantasAsig]=Asignatura;
+			cuantasAsig++;
+		}
 	}
 	
 	
 	
-	
-	
-
-
-
 	public String getNombre() {
 		return nombre;
 	}
