@@ -1,5 +1,7 @@
 package Aula;
 
+import java.util.Arrays;
+
 public class Alumno {
 
 	private String nombre;
@@ -16,6 +18,10 @@ public class Alumno {
 	
 	
 	
+	
+
+
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -35,4 +41,9 @@ public class Alumno {
 		this.telefono = telefono;
 	}
 	
+	public String toString() {
+		return "Alumno nombre=" + nombre + ", apellidos=" + apellidos + ", telefono=" + telefono + ", asignaturas="
+				+ Arrays.toString(asignaturas) + "";
+	}
+
 }

@@ -31,5 +31,9 @@ public class Asignatura {
 		EV3 = eV3;
 	}
 	
+	public String toString() {
+		return "Asignatura [nombre=" + nombre + ", EV1=" + EV1 + ", EV2=" + EV2 + ", EV3=" + EV3 + "]";
+	}
+	
 	
 }
