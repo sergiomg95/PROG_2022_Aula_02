@@ -19,6 +19,23 @@ public class Aula {
 		}
 	}
 	
+	public float getMediaTotal() {
+		float MediaTotal=0;
+		float suma = 0;
+		for(int i=0;i<cuantosHay;i++) {
+			Asignatura[] asignatura= alumnos[i].getCalificacion();
+			suma=alumnos[i].getMediaEV1(asignatura);
+			
+			if(suma>0) {
+				MediaTotal+=suma;
+			}
+		}
+		MediaTotal=MediaTotal/cuantosHay;
+		return MediaTotal;
+	}
+	
+	
+	
 	public String toString() {
 		String devolver= "Aula alumnos ";
 		for(int i=0;i<cuantosHay;i++) {

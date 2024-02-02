@@ -32,8 +32,10 @@ public class Start {
 		a2.addAsig(asig7);
 		a2.addAsig(asig8);
 		
-		System.out.println(aula);
 		
+		System.out.println(aula);
+		System.out.println(aula.getMediaTotal());
+
 	}
 
 }

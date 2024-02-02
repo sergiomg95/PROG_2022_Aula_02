@@ -19,7 +19,9 @@ public class Alumno {
 		cuantasAsig=0;
 		
 	}
-	
+	public Asignatura[] getCalificacion() {
+		return asignaturas;
+	}
 	public void addAsig(Asignatura Asignatura) {
 		if(cuantasAsig<asignaturas.length) {
 			asignaturas[cuantasAsig]=Asignatura;
@@ -47,6 +49,16 @@ public class Alumno {
 	public void setTelefono(int telefono) {
 		this.telefono = telefono;
 	}
+	
+	public float getMediaEV1(Asignatura[] Asignatura) {
+		float Media=0;
+		for(int i=0;i<asignaturas.length;i++) {
+		Media+=Asignatura[i].getEV1();
+		}
+		Media=Media/asignaturas.length;
+		return Media;
+	}
+	
 	
 	public String toString() {
 		return "\n nombre:" + nombre + " -apellidos:" + apellidos + "-telefono:" + telefono + ", asignaturas:"
