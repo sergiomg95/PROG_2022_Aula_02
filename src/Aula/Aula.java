@@ -20,6 +20,10 @@ public class Aula {
 	}
 	
 	public String toString() {
-		return "Aula alumnos " + Arrays.toString(alumnos) + "]";
+		String devolver= "Aula alumnos ";
+		for(int i=0;i<cuantosHay;i++) {
+			devolver+=alumnos[i]+" ";
+		}
+		return  devolver;
 	}
 }

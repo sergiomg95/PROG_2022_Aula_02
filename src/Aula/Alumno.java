@@ -15,10 +15,9 @@ public class Alumno {
 		this.nombre=nombre;
 		this.apellidos=apellidos;
 		this.telefono=telefono;
-	}
-	public Alumno() {
 		asignaturas=new Asignatura[4];
 		cuantasAsig=0;
+		
 	}
 	
 	public void addAsig(Asignatura Asignatura) {
@@ -50,7 +49,7 @@ public class Alumno {
 	}
 	
 	public String toString() {
-		return "\n nombre:" + nombre + "- apellidos:" + apellidos + "- telefono:" + telefono + ", asignaturas:"
+		return "\n nombre:" + nombre + " -apellidos:" + apellidos + "-telefono:" + telefono + ", asignaturas:"
 				+ Arrays.toString(asignaturas) + "";
 	}
 

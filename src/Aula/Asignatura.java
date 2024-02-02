@@ -43,7 +43,7 @@ public class Asignatura {
 	}
 	
 	public String toString() {
-		return "Asignatura [nombre=" + nombre + ", EV1=" + EV1 + ", EV2=" + EV2 + ", EV3=" + EV3 + "]";
+		return "Asignatura " + nombre + ": EV1=" + EV1 + ", EV2=" + EV2 + ", EV3=" + EV3 + "";
 	}
 	
 	
