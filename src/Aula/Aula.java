@@ -20,6 +20,6 @@ public class Aula {
 	}
 	
 	public String toString() {
-		return "Aula alumnos=" + Arrays.toString(alumnos) + "]";
+		return "Aula alumnos " + Arrays.toString(alumnos) + "]";
 	}
 }

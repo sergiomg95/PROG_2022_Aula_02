@@ -11,6 +11,11 @@ public class Alumno {
 	private int cuantasAsig;
 	
 	
+	public Alumno(String nombre,String apellidos, int telefono) {
+		this.nombre=nombre;
+		this.apellidos=apellidos;
+		this.telefono=telefono;
+	}
 	public Alumno() {
 		asignaturas=new Asignatura[4];
 		cuantasAsig=0;
@@ -45,7 +50,7 @@ public class Alumno {
 	}
 	
 	public String toString() {
-		return "Alumno nombre=" + nombre + ", apellidos=" + apellidos + ", telefono=" + telefono + ", asignaturas="
+		return "\n nombre:" + nombre + "- apellidos:" + apellidos + "- telefono:" + telefono + ", asignaturas:"
 				+ Arrays.toString(asignaturas) + "";
 	}
 
